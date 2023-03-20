@@ -1,0 +1,13 @@
+.wrapper_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    margin-left: -62px;
+}
+
+.title {
+    margin-right: 7.82px;
+}
