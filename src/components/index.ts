@@ -4,3 +4,6 @@ export * from './NavBar/NavBar';
 export * from './Logo/Logo';
 export * from './Display/Dispaly';
 export * from './Card/Card';
+export * from './Footer/Footer';
+export * from './Review/Review';
+export * from './Advantages/Advantages';

@@ -1,0 +1,70 @@
+.review {
+    width: 960px;
+
+    background: var(--white);
+    z-index: 0;
+}
+
+.line {
+    width: 184px;
+    height: 4px;
+
+    border: none;
+    background-color: var(--primary);
+
+    margin-top: 101px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 48px;
+}
+
+.description {
+    width: 489px;
+}
+
+.comma {
+    position: relative;
+    top: 185px;
+    right: 85px;
+
+    transform: rotate(180deg);
+}
+
+.commaTop {
+    position: relative;
+    right: 17px;
+}
+
+.userName {
+    position: relative;
+    top: 185px;
+    right: 489px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 134px;
+}
+
+.block>img {
+    width: 97px;
+    height: 97px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+
+    margin-right: 30px;
+}
+
+.block_description {
+    width: 242px;
+    height: 129px;
+}

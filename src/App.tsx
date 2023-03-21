@@ -1,5 +1,6 @@
 import './App.css';
-import { Button, Display, Logo, NavBar } from './components';
+import { Advantages, Button, Display, Footer, Logo, NavBar, Review } from './components';
+
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
         <Button appearance='button'>Button</Button>
       </header>
       <Display />
+      <Footer>
+        <Review />
+        <Advantages />
+      </Footer>
     </div>
   );
 }

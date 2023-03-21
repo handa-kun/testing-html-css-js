@@ -1,0 +1,25 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 960px;
+
+    background: var(--background-block);
+}
+
+.line {
+    width: 184px;
+    height: 4px;
+
+    border: none;
+    background-color: var(--primary);
+
+    margin-top: 101px;
+}
+
+.title {
+    width: 640px;
+
+    text-align: center;
+}
