@@ -14,11 +14,4 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 89px;
-}
-
-body>div {
-  height: 947px;
-
-  background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
 }

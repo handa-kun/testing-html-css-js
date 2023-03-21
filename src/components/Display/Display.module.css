@@ -1,0 +1,57 @@
+.display {
+    height: 947px;
+
+    background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
+}
+
+.title {
+    padding-top: 101px;
+}
+
+.line {
+    width: 184px;
+    border: none;
+    background-color: var(--primary);
+    height: 4px;
+}
+
+.product {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.firstLevel,
+.secondLevel,
+.thirdLevel {
+    display: flex;
+    justify-content: center;
+}
+
+.firstLevel {
+    padding-top: 69px;
+}
+
+.secondLevel {
+    align-items: center;
+}
+
+.thirdLevel {
+    padding-bottom: 93px;
+}
+
+.bubblesBot,
+.bubblesTop {
+    position: relative;
+}
+
+.bubblesBot {
+    top: 330px;
+    transform: rotate(-55.73deg);
+}
+
+.bubblesTop {
+    bottom: 270px;
+    right: 180px;
+}

@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, Logo, NavBar } from './components';
+import { Button, Display, Logo, NavBar } from './components';
 
 
 function App() {
@@ -8,13 +8,11 @@ function App() {
       <header className='header'>
         <div className='container'>
           <Logo />
-          <NavBar />
+          <NavBar className='nav' />
         </div>
         <Button appearance='button'>Button</Button>
       </header>
-      <body>
-        <div></div>
-      </body>
+      <Display />
     </div>
   );
 }
