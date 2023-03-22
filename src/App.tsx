@@ -1,5 +1,5 @@
 import './App.css';
-import { Advantages, Button, Display, Footer, Logo, NavBar, Review } from './components';
+import { Button, Display, Footer, Logo, NavBar } from './components';
 
 
 
@@ -14,10 +14,7 @@ function App() {
         <Button appearance='button'>Button</Button>
       </header>
       <Display />
-      <Footer>
-        <Review />
-        <Advantages />
-      </Footer>
+      <Footer />
     </div>
   );
 }

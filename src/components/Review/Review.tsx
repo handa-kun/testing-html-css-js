@@ -7,10 +7,12 @@ import UserIcon from './user.svg';
 
 export const Review = ({ ...props }: ReviewProps): JSX.Element => {
     return <div className={styles.review}>
-        <hr className={styles.line} />
-        <Htag tag='Normal'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </Htag>
+        <div className={styles.title}>
+            <hr className={styles.line} />
+            <Htag tag='Normal'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </Htag>
+        </div>
         <div className={styles.user}>
             <img src={UserIcon} alt="Photo_User" />
             <span><CommaIcon className={styles.commaTop} /></span>
@@ -31,7 +33,7 @@ export const Review = ({ ...props }: ReviewProps): JSX.Element => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
                         animi  autem aliquid
                     </p>
-                    <b className={styles.name}>Jane Doe</b>
+                    <b>Jane Doe</b>
                 </div>
                 <img src={UserIcon} alt="user" />
             </div>

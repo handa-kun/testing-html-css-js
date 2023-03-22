@@ -7,3 +7,4 @@ export * from './Card/Card';
 export * from './Footer/Footer';
 export * from './Review/Review';
 export * from './Advantages/Advantages';
+export * from './List/List';

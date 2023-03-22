@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 
@@ -8,7 +9,10 @@ body {
 
   font-family: "Roboto";
 
-
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 * {
@@ -28,4 +32,5 @@ a {
   --white-text: #FFFFFF;
   --gray: #A6ABBD;
   --white: #F5F5F5;
+  --line: #E7EBF0;
 }

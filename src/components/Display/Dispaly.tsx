@@ -1,4 +1,3 @@
-import { Card } from '../Card/Card';
 import { Htag } from '../Htag/Htag';
 import styles from './Display.module.css';
 import { DisplayProps } from './Display.props';
@@ -9,6 +8,7 @@ import { ReactComponent as BoxMiniIcon } from './public/box2.svg';
 import { ReactComponent as PhoneIcon } from './public/phone.svg';
 import { ReactComponent as ProductIcon } from './public/product.svg';
 import BerryIcon from './public/berry.svg';
+import cn from 'classnames';
 
 
 
@@ -23,35 +23,35 @@ export const Display = ({ children }: DisplayProps): JSX.Element => {
                 <BubbleBotIcon className={styles.bubblesBot} />
                 <div className={styles.levels}>
                     <div className={styles.firstLevel}>
-                        <Card className={styles.firstItem}>
+                        <div className={styles.item}>
                             <PhoneIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
-                        <Card>
+                        </div>
+                        <div className={styles.item}>
                             <BoxMiniIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
+                        </div>
                     </div>
                     <div className={styles.secondLevel}>
-                        <Card>
+                        <div className={styles.item}>
                             <BoxIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
+                        </div>
                         <img src={BerryIcon} alt="Berry" />
-                        <Card>
+                        <div className={styles.item}>
                             <ProductIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
+                        </div>
                     </div>
                     <div className={styles.thirdLevel}>
-                        <Card>
+                        <div className={styles.item}>
                             <PhoneIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
-                        <Card>
+                        </div>
+                        <div className={cn(styles.item, styles.item6)}>
                             <BoxMiniIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </Card>
+                        </div>
                     </div>
                 </div>
                 <BubbleTopIcon className={styles.bubblesTop} />

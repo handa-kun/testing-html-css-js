@@ -1,8 +1,11 @@
+import { Advantages } from '../Advantages/Advantages';
+import { Review } from '../Review/Review';
 import styles from './Footer.module.css';
 import { FooterProps } from './Footer.props';
 
-export const Footer = ({ children }: FooterProps): JSX.Element => {
+export const Footer = ({ ...props }: FooterProps): JSX.Element => {
     return <div className={styles.footer}>
-        {children}
+        <Review />
+        <Advantages />
     </div>
 };

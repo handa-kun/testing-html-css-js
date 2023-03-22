@@ -1,6 +1,7 @@
 .App {}
 
 .header {
+  width: auto;
   height: 160px;
   padding: 0 84px 0 87px;
 

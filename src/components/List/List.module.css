@@ -1,0 +1,56 @@
+.check {
+    width: 704px;
+    padding-bottom: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border-bottom: 1px solid var(--line);
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    cursor: pointer;
+}
+
+.check:first-child {
+    padding-top: 21px;
+}
+
+.title {
+    margin-right: 113px;
+}
+
+.arrow {
+    display: inline-block;
+}
+
+.down {
+    transition: all 0.2s;
+    transform: rotate(180deg);
+}
+
+.description {
+    width: 560px;
+
+    display: none;
+
+}
+
+.drop {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+
+    position: relative;
+    left: 70px;
+}
+
+.opened {
+    color: var(--primary);
+}
