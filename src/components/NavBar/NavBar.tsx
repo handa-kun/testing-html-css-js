@@ -1,11 +1,30 @@
-import { Button } from '../Button/Button';
 import styles from './NavBar.module.css';
 import { NavBarProps } from './NavBar.props';
+import { useState } from 'react';
 
-export const NavBar = ({ children }: NavBarProps): JSX.Element => {
+export const NavBar = ({ ...props }: NavBarProps): JSX.Element => {
+    const [state, setState] = useState({
+        activeObject: '',
+        objects: ['NavItem1', 'NavItem2', 'NavItem3']
+    });
+
+    function toggleActive(index: number) {
+        setState({ ...state, activeObject: state.objects[index] });
+    }
+
+    function toggleActiveStyle(index: number) {
+        if (state.objects[index] === state.activeObject) {
+            return styles.active;
+        } else {
+            return styles.item;
+        }
+    }
+
     return <div className={styles.nav}>
-        <Button appearance='link' className={styles.item}>NavItem1</Button>
-        <Button appearance='link' className={styles.item}>NavItem2</Button>
-        <Button appearance='button' className={styles.item}>NavItem3</Button>
+        {state.objects.map((el, idx) => (
+            <a href="$#" key={idx} className={toggleActiveStyle(idx)} onClick={() => toggleActive(idx)}>
+                {el}
+            </a>
+        ))}
     </div>
 };

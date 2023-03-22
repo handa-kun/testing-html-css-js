@@ -11,7 +11,7 @@ function App() {
           <Logo />
           <NavBar className='nav' />
         </div>
-        <Button appearance='button'>Button</Button>
+        <Button>Button</Button>
       </header>
       <Display />
       <Footer />

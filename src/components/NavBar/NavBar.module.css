@@ -1,10 +1,43 @@
 .nav {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 
     margin-left: 90.36px;
+    text-align: center;
+
+    color: var(--gray);
 }
 
-.nav>button:hover {
+.item {
+    margin-left: 85px;
+}
+
+.item:hover {
     color: var(--primary);
+}
+
+.active:hover {
+    color: var(--line);
+}
+
+.active {
+    background: var(--white-text);
+    border: none;
+
+}
+
+.active {
+    width: 117px;
+    height: 32px;
+    padding: 4px;
+    margin-left: 85px;
+
+    cursor: pointer;
+
+    background: var(--primary);
+    color: var(--white-text);
+
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
 }

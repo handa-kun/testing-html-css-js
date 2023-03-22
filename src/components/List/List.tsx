@@ -15,11 +15,12 @@ export const List = ({ className }: ListProps): JSX.Element => {
 
     return (
         <div className={styles.list}>
+
             <div className={styles.check}>
                 <Switch />
                 <span className={styles.title}>Lorem ipsum, dolor sit amet adipisicing elit.</span>
                 {<span className={cn(styles.arrow, {
-                    [styles.down]: !opened,
+                    [styles.down]: opened,
                 })}>
                     <ArrowIcon />
                 </span>}
@@ -32,7 +33,7 @@ export const List = ({ className }: ListProps): JSX.Element => {
                 <Led />
                 <span className={styles.title}>Lorem ipsum, dolor sit amet adipisicing elit.</span>
                 {<span className={cn(styles.arrow, {
-                    [styles.down]: !opened,
+                    [styles.down]: opened,
                 })}>
                     <ArrowIcon />
                 </span>}
@@ -41,7 +42,7 @@ export const List = ({ className }: ListProps): JSX.Element => {
                 Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit
                 exercitationem laborum cupiditate magnam eaque quae delenit
             </p>
-            <div className={styles.check}>
+            <div className={styles.check} onClick={() => setOpened(false)}>
                 <LightsOff />
                 <div className={cn(className, {
                     [styles.opened]: !opened,
@@ -66,7 +67,7 @@ export const List = ({ className }: ListProps): JSX.Element => {
                 <Splitter />
                 <span className={styles.title}>Lorem ipsum, dolor sit amet adipisicing elit.</span>
                 {<span className={cn(styles.arrow, {
-                    [styles.down]: !opened,
+                    [styles.down]: opened,
                 })}>
                     <ArrowIcon />
                 </span>}
@@ -79,7 +80,7 @@ export const List = ({ className }: ListProps): JSX.Element => {
                 <PowerOff />
                 <span className={styles.title}>Lorem ipsum, dolor sit amet adipisicing elit.</span>
                 {<span className={cn(styles.arrow, {
-                    [styles.down]: !opened,
+                    [styles.down]: opened,
                 })}>
                     <ArrowIcon />
                 </span>}
