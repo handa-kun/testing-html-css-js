@@ -11,3 +11,11 @@
 .title {
     margin-right: 7.82px;
 }
+
+@media screen and (max-width: 740px) {
+    .wrapper_logo {
+        margin-left: 10x;
+        justify-content: center;
+    }
+
+}

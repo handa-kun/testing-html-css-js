@@ -73,3 +73,25 @@
     bottom: 270px;
     right: 120px;
 }
+
+@media screen and (max-width: 940px) {
+    .title {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .item,
+    .bubblesBot,
+    .bubblesTop {
+        display: none;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .display {}
+
+}

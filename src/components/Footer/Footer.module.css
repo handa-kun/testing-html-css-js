@@ -1,9 +1,20 @@
 .footer {
     height: auto;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+
 
     background: var(--white-text);
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
 }

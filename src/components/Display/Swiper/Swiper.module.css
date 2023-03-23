@@ -1,0 +1,13 @@
+.slider {
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    .slider {
+        display: flex;
+        width: 179px;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+}

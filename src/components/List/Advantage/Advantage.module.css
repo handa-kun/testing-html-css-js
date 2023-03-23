@@ -1,0 +1,93 @@
+.advantage {
+    width: 704px;
+    padding-bottom: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border-bottom: 1px solid var(--line);
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    cursor: pointer;
+}
+
+.advantage:first-child {
+    padding-top: 21px;
+}
+
+.title {
+    margin-right: 113px;
+}
+
+.arrow {
+    display: inline-block;
+}
+
+.down {
+    transition: all 0.2s;
+    transform: rotate(180deg);
+}
+
+.description {
+    width: 560px;
+
+    display: none;
+}
+
+.drop {
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.opened {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 1550px) {
+    .advantage {
+        justify-content: center;
+    }
+
+    .drop {
+        left: -3px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .drop {
+        left: 17px;
+        width: 500px;
+    }
+
+    .title {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .advantage>svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .drop>p {
+        width: 370px;
+
+        margin-left: 80px;
+    }
+}

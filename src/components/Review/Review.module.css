@@ -1,8 +1,6 @@
 .review {
-    height: 829px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     background: var(--white);
@@ -36,22 +34,19 @@
 }
 
 .comma {
-    position: relative;
-    top: 185px;
-    right: 85px;
+    display: flex;
 
     transform: rotate(180deg);
 }
 
 .commaTop {
-    position: relative;
-    right: 17px;
+    display: flex;
+    margin-right: 30px;
 }
 
 .userName {
-    position: relative;
-    top: 185px;
-    right: 492px;
+    align-self: flex-start;
+    margin-top: -15px;
 }
 
 .reviews {
@@ -80,4 +75,56 @@
 
     width: 242px;
     height: max-content;
+}
+
+@media screen and (max-width: 1490px) {
+    .review {
+        align-items: center;
+    }
+
+    .title {
+        width: 650px;
+    }
+
+    .user {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user>img {
+        width: fit-content;
+    }
+
+    .commaTop {
+        align-self: flex-start;
+    }
+
+    .comma {
+        align-self: flex-end;
+    }
+
+    .reviews {
+        flex-direction: column;
+
+        padding-top: 0;
+    }
+
+    .block {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .title,
+    .user,
+    .description {
+        width: 340px;
+    }
+
+    .comma {
+        position: relative;
+        top: -250px;
+    }
+
 }

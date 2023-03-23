@@ -22,7 +22,7 @@ export const NavBar = ({ ...props }: NavBarProps): JSX.Element => {
 
     return <div className={styles.nav}>
         {state.objects.map((el, idx) => (
-            <a href="$#" key={idx} className={toggleActiveStyle(idx)} onClick={() => toggleActive(idx)}>
+            <a href="$#" key={idx} className={toggleActiveStyle(idx)} onClick={(e): void => { e.preventDefault(); toggleActive(idx) }}>
                 {el}
             </a>
         ))}

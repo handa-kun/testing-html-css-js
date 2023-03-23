@@ -9,6 +9,7 @@ import { ReactComponent as PhoneIcon } from './public/phone.svg';
 import { ReactComponent as ProductIcon } from './public/product.svg';
 import BerryIcon from './public/berry.svg';
 import cn from 'classnames';
+import { SwiperIcon } from './Swiper/Swiper';
 
 
 
@@ -37,7 +38,7 @@ export const Display = ({ children }: DisplayProps): JSX.Element => {
                             <BoxIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-                        <img src={BerryIcon} alt="Berry" />
+                        <img src={BerryIcon} alt="Berry" className={styles.berry} />
                         <div className={styles.item}>
                             <ProductIcon />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -56,6 +57,7 @@ export const Display = ({ children }: DisplayProps): JSX.Element => {
                 </div>
                 <BubbleTopIcon className={styles.bubblesTop} />
             </div>
+            <SwiperIcon />
         </div>
     )
 };

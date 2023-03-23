@@ -9,7 +9,7 @@ export const Advantages = ({ ...props }: AdvantagesProps): JSX.Element => {
         <div className={styles.advantages}>
             <hr className={styles.line} />
             <div className={styles.title}>
-                <Htag tag='Normal' >
+                <Htag tag='Normal'>
                     Lorem ipsum, dolor sit adipisicing elit.
                 </Htag>
                 <p> Porro ab rerum omnis magnam eligendi error nobis dolore?</p>
